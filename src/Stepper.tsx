@@ -14,7 +14,7 @@ const Stepper = () => {
       <div className="flex gap-8 h-[30vh] justify-center items-center">
         {steps.map((step, i) => {
           return (
-            <div className="flex flex-col w-56 h-32 relative" key={i}>
+            <div className="flex flex-col w-56 h-32 relative " key={i}>
               <div
                 className={`h-10 w-10 rounded-full border-1 border-gray-400 flex items-center justify-center ${
                   Number(i) == Number(stepper)
@@ -35,7 +35,7 @@ const Stepper = () => {
                   }`}
                 ></div>
               )}
-              <div className="p-6">{step.name}</div>
+              <div className="p-6 ml-[-1.3rem]">{step.name}</div>
             </div>
           );
         })}
